@@ -15,7 +15,39 @@ Take note of the <strong>Client Access Token</strong>, as you’ll be needing it
 <h3>Edit Your Website</h3>
 
 This guide assumes you have a good understanding of HTML and CSS. Open up your editor, and paste the following in the place you’d like the portfolio to appear:
-<pre>&lt;script&gt;
+<h4>CSS</h4>
+<pre>&lt;!-- Custom style my dribbble gallery --&gt;
+&lt;link type="text/css" rel="stylesheet" href="src/my-dribbble-gallery.css" /&gt;</pre>
+<h4>HTML</h4>
+<pre>&lt;!-- Your profiles --&gt;
+&lt;div class="bcr_drb_profile"&gt;&lt;/div&gt;
+
+&lt;!-- Your shot --&gt;
+&lt;div class="dribbble bcr_drb_shots"&gt;&lt;/div&gt;
+
+&lt;!-- Your buckets --&gt;
+&lt;div class="dribbble bcr_drb_buckets" style="display:none"&gt;&lt;/div&gt;
+
+&lt;!-- Your projects --&gt;
+&lt;div class="dribbble bcr_drb_projects" style="display:none"&gt;&lt;/div&gt;
+
+&lt;!-- Your teams --&gt;
+&lt;div class="dribbble bcr_drb_teams" style="display:none"&gt;&lt;/div&gt;
+
+&lt;!-- Your likes --&gt;
+&lt;div class="dribbble bcr_drb_likes" style="display:none"&gt;&lt;/div&gt;
+
+&lt;!-- Your followers --&gt;
+&lt;div class="dribbble bcr_drb_followers" style="display:none"&gt;&lt;/div&gt;</pre>
+<h4>JS</h4>
+<pre>&lt;!-- Include jQuery --&gt;
+&lt;script src="//code.jquery.com/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- jQuery my dribbble gallery --&gt;
+&lt;script src="src/my-dribbble-gallery.js"&gt;&lt;/script&gt;
+
+&lt;!-- Setting Example --&gt;
+&lt;script&gt;
     bcr_mdg(
         drb_username = 'USERNAME',
         drb_token = 'TOKEN'
